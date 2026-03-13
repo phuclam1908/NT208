@@ -57,3 +57,32 @@ thì đã chạy đúng
 
 
 ## Các lỗi logic
+**1.** Ở đường dẫn ```http://localhost:8000/?page=orders``` ta có Queue hiện tại là 2 người nhưng theo logic code thì chỉ có 1 người tên "Minh Vo" có trạng thái là 'pending'.
+
+Ở file ```orders.php``` line 6 có đoạn code
+```
+if ($order['status'] === 'completed')
+```
+Cần sửa 'completed' -> 'pending'
+```
+if ($order['status'] === 'pending')
+```
+**2.** Ở đường dẫn ```http://localhost:8000/?page=customers``` ta có số lượng members là 2 người.
+Ở file ```customers.php``` có đoạn code
+```
+    [
+        'name' => 'Minh Vo',
+        'email' => 'minh@student.example.com',
+        'tier' => 'student',
+        'active' => false,
+    ],
+```
+Cần sửa 'false' -> 'true' để có thể hiện đầy đủ số members
+```
+    [
+        'name' => 'Minh Vo',
+        'email' => 'minh@student.example.com',
+        'tier' => 'student',
+        'active' => true,
+    ],
+```
