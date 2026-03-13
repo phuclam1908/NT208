@@ -1,6 +1,6 @@
 <?php
 
-$reportRows = []
+$reportRows = [];
 $totalsByCategory = [];
 
 foreach ($products as $product) {
