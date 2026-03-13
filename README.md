@@ -86,3 +86,21 @@ Cần sửa 'false' -> 'true' để có thể hiện đầy đủ số members
         'active' => true,
     ],
 ```
+**3.** Ở file ```customers.php``` có đoạn code
+```
+    [
+        'name' => 'Linh Pham',
+        'email' => 'linh@student.example.com',
+        'tier' => 'falcuty',
+        'active' => true,
+    ],
+```
+Cần sửa 'falcuty' -> 'student' để có thể tính đúng số liệu
+```
+    [
+        'name' => 'Linh Pham',
+        'email' => 'linh@student.example.com',
+        'tier' => 'student',
+        'active' => true,
+    ],
+```
