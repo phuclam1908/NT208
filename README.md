@@ -104,3 +104,23 @@ Cần sửa 'falcuty' -> 'student' để có thể tính đúng số liệu
         'active' => true,
     ],
 ```
+
+**4.** Ở file `dashboard.php`, đoạn 
+```
+foreach ($products as $sku => $product) {
+    if ($product['stock'] < 1) {
+        $lowStockItems[] = $sku . ' - ' . $product['name'];
+    }
+}
+```
+Đang đếm số lượng hàng còn tồn kho thấp, tuy nhiên trong code đang tính là số lượng hàng đã hết (nhỏ hơn 1)
+
+Cần sửa thành 
+```
+foreach ($products as $sku => $product) {
+    if ($product['stock'] < 5) {
+        $lowStockItems[] = $sku . ' - ' . $product['name'];
+    }
+}
+```
+để đếm thành số lượng còn tồn kho dưới 5 (tồn kho ít)
