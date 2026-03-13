@@ -4,14 +4,14 @@ return [
     [
         'name' => 'Linh Pham',
         'email' => 'linh@student.example.com',
-        'tier' => 'faculty',
+        'tier' => 'student',
         'active' => true,
     ],
     [
         'name' => 'Minh Vo',
         'email' => 'minh@student.example.com',
         'tier' => 'student',
-        'active' => false,
+        'active' => true,
     ],
     [
         'name' => 'An Do',
