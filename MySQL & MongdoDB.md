@@ -1,3 +1,48 @@
+# 1. Tạo bảng users trong MySQL và thêm 3 bản ghi 
+
+Sử dụng lệnh trên MySQL
+
+``` bash  
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100)
+);
+
+    INSERT INTO users (name, email) VALUES
+    ('Linh', 'linh@gmail.com'),
+    ('An', 'an@gmail.com'),
+    ('Binh', 'binh@gmail.com');
+
+````
+
+# 2. Tạo collection users trong MongDB Atlas và thêm 3 bản ghi
+Trên MongDB giao diện, sử dụng Add Data
+
+```bash
+[
+  {
+    "name": "Linh",
+    "email": "linh@gmail.com"
+  },
+  {
+    "name": "An",
+    "email": "an@gmail.com"
+  },
+  {
+    "name": "Binh",
+    "email": "binh@gmail.com"
+  }
+]
+```
+
+# 4. Chụp ảnh màn hình 
+## Bảng
+
+![alt text](image.png)
+## Document
+![alt text](image-1.png)
+
 # 5. So sánh MySQL và MongoDB
 
 **Giống nhau**
